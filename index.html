@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Etsehiwot Teklu</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#efe8dc;
+font-family:"Space Mono", monospace;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:40px;
+
+background-image:
+radial-gradient(rgba(0,0,0,.03) 1px, transparent 1px);
+background-size:4px 4px;
+
+}
+
+.container{
+
+display:grid;
+grid-template-columns:1fr 420px 1fr;
+gap:70px;
+align-items:center;
+max-width:1300px;
+width:100%;
+
+}
+
+.left{
+
+text-align:right;
+
+}
+
+.small{
+
+letter-spacing:6px;
+font-size:13px;
+color:#66786d;
+margin-bottom:25px;
+
+}
+
+.name{
+
+font-family:"Cormorant Garamond", serif;
+font-size:88px;
+line-height:.9;
+color:#557467;
+font-weight:600;
+
+}
+
+.lastname{
+
+font-style:italic;
+}
+
+.bio{
+
+margin-top:30px;
+font-size:18px;
+line-height:1.8;
+color:#66786d;
+
+}
+
+.btn{
+
+display:inline-flex;
+align-items:center;
+gap:15px;
+
+margin-top:40px;
+
+padding:18px 45px;
+
+background:#d8d5ca;
+
+text-decoration:none;
+
+color:#4d6359;
+
+letter-spacing:3px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#557467;
+color:white;
+
+}
+
+.image-box{
+
+border:12px solid rgba(255,255,255,.35);
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.image-box img{
+
+display:block;
+width:100%;
+height:620px;
+object-fit:cover;
+filter:brightness(.75);
+
+}
+
+.right{
+
+padding-left:30px;
+
+}
+
+.right h3{
+
+letter-spacing:6px;
+font-size:14px;
+margin-bottom:35px;
+color:#66786d;
+
+}
+
+.right a{
+
+display:block;
+font-family:"Cormorant Garamond", serif;
+font-size:28px;
+margin:28px 0;
+text-decoration:none;
+color:rgb(168, 93, 93);
+text-shadow:0 0 2px rgba(0,0,0,.25);
+transition:.3s;
+
+}
+
+.right a:hover{
+
+transform:translateX(10px);
+color:#557467;
+
+}
+
+.footer{
+
+position:fixed;
+bottom:20px;
+left:20px;
+right:20px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:12px 24px;
+font-size:12px;
+
+}
+
+.footer a{
+
+display:inline-flex;
+align-items:center;
+gap:8px;
+color:#4d6359;
+text-decoration:none;
+transition:color .3s;
+
+}
+
+.footer a:hover{
+
+color:#a85d5d;
+
+}
+
+.footer a:focus-visible{
+
+outline:2px solid #557467;
+outline-offset:4px;
+
+}
+
+.footer svg{
+
+width:18px;
+height:18px;
+flex:none;
+
+}
+
+@media(max-width:1000px){
+
+.container{
+
+grid-template-columns:1fr;
+text-align:center;
+
+}
+
+.left{
+
+text-align:center;
+
+}
+
+.right{
+
+padding:0;
+
+}
+
+.image-box img{
+
+height:500px;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="left">
+
+<div class="small">
+HI, I'M
+</div>
+
+<div class="name">
+Etsehiwot<br>
+<span class="lastname">Teklu</span>
+</div>
+
+<div class="bio">
+Writer, storyteller,<br>
+and creator sharing thoughts,<br>
+stories, and inspiration.
+</div>
+
+<a href="https://open.substack.com/pub/whatinthepol" class="btn">
+START HERE →
+</a>
+
+</div>
+
+<div class="image-box">
+
+<!-- Replace profile.jpg with her image -->
+<img src="etsehiwot.png" alt="Etsehiwot Teklu">
+
+</div>
+
+<div class="right" id="links">
+
+<h3>FIND ME</h3>
+
+<a href="https://open.substack.com/pub/whatinthepol" target="_blank">
+Substack
+</a>
+
+<a href="https://www.instagram.com/etse_teklu?mdxt=OHg1ZG9nOHBvNHFx&utm_source=qr" target="_blank">
+Instagram
+</a>
+
+<a href="https://youtube.com/@etsehiwotteklu?si=P_UFHt4PFUN5bJuC" target="_blank">
+YouTube
+</a>
+
+<a href="https://www.tiktok.com/@whatinthehiwot?_r=1&_t=ZS-9AtsPUwsbfM" target="_blank">
+TikTok
+</a>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<a href="https://open.substack.com/pub/whatinthepol" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+<path d="M5 5h14M5 9h14M5 13h14M5 17l7 4 7-4"/>
+</svg>
+Substack
+</a>
+
+<a href="https://www.instagram.com/etse_teklu?mdxt=OHg1ZG9nOHBvNHFx&utm_source=qr" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+<rect x="3.5" y="3.5" width="17" height="17" rx="5"/>
+<circle cx="12" cy="12" r="4"/>
+<circle cx="17.5" cy="6.8" r=".8" fill="currentColor" stroke="none"/>
+</svg>
+Instagram
+</a>
+
+<a href="https://youtube.com/@etsehiwotteklu?si=P_UFHt4PFUN5bJuC" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true">
+<rect x="2.5" y="5" width="19" height="14" rx="4"/>
+<path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/>
+</svg>
+YouTube
+</a>
+
+<a href="https://www.tiktok.com/@whatinthehiwot?_r=1&_t=ZS-9AtsPUwsbfM" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M14 4v11.2a4 4 0 1 1-3-3.9M14 4c.7 2.4 2.3 3.8 5 4"/>
+</svg>
+TikTok
+</a>
+
+</div>
+
+</body>
+</html>
